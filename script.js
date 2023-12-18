@@ -30,7 +30,7 @@ async function init() {
 
     // Add about page link
     const about=document.createElement('a');
-    about.href='https://weather.kevinwang21.repl.co/about';
+    about.href='https://w-uta8.onrender.com/about';
     about.innerHTML='About';
     about.style='position: absolute; bottom: 0px; right: 0px; padding: 10px;';
     document.body.appendChild(about);
@@ -78,7 +78,7 @@ async function init() {
         <img src='${json.current.condition.icon}'></img><br>
         ${json.current.condition.text}<br>
         Current time: ${date.toLocaleString()}<br>
-        <a href='https://weather.kevinwang21.repl.co/details/?lat=${json.location.lat}&lon=${json.location.lon}'>Click here for weather predictions for this location</a>`;
+        <a href='https://w-uta8.onrender.com/details/?lat=${json.location.lat}&lon=${json.location.lon}'>Click here for weather predictions for this location</a>`;
         //layerGroup.addLayer(L.marker(currentPt,{icon:draw()}).bindPopup(pop));
         //layerGroup.addTo(map);
         map.openPopup(pop, currentPt);
