@@ -32,7 +32,7 @@ async function init() {
     const about=document.createElement('a');
     about.href='https://w-uta8.onrender.com/about';
     about.innerHTML='About';
-    about.style='position: absolute; bottom: 0px; right: 0px; padding: 10px;';
+    about.style='position: absolute; bottom: 0px; left: 110px; padding: 10px; font-size: 20px;';
     document.body.appendChild(about);
 
     // Create the div that will hold the Leaflet map
