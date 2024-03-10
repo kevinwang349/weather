@@ -70,7 +70,7 @@ async function init() {
     table.appendChild(headRow);
     for(const day of weatherDays){
         // Add daily weather
-        const dateObj=new Date(day.date_epoch*1000+localDate.getTimezoneOffset()*60000);
+        const dateObj=new Date(day.date_epoch*1000+(localDate.getTimezoneOffset()+120)*60000);
         const dayRow=document.createElement('tr');
         //dayRow.setAttribute('id',dateObj.toDateString().substring(0,10));
         dayRow.id=dateObj.toDateString().substring(0,10);
